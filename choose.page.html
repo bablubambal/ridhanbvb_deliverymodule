@@ -1,0 +1,12 @@
+<ion-header>
+    <ion-back-button defaultHref="/"></ion-back-button>
+  <ion-toolbar>
+    <ion-title>TT Executive</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-button color="primary" shape="round" expand ="block" (click)="pickup()">PickUp<ion-badge color="warning" >
+    {{pick}}</ion-badge></ion-button>
+  <ion-button color="primary"shape="round" expand = "block"  (click)="delivery()">Delivery<ion-badge color="warning" 
+    >{{deli}}</ion-badge></ion-button>
+</ion-content>

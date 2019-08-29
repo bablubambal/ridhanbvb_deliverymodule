@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-title>Order Summary</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card >
+        <ion-card-header>
+          <ion-card-subtitle>By Manager</ion-card-subtitle>
+          <ion-card-title>Order Summary {{recieved.Orderno}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          here is the summary to be written by the manager
+        </ion-card-content>
+     
+          <ion-card-header>
+           
+            <ion-card-title>Parts Replaced</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+              <ion-list>
+                <ion-item> Battery</ion-item>
+                <ion-item> speaker</ion-item>
+              </ion-list>
+              <ion-chip>
+                  <ion-icon name="today"></ion-icon>
+                  <ion-label>Bill : ₹{{recieved.amount}}/-</ion-label>
+                </ion-chip><br>
+                
+                <ion-item>
+                    <ion-label>Payment Mode</ion-label>
+                    <ion-select placeholder="Select One">
+                      <ion-select-option value="cash">Cash</ion-select-option>
+                      <ion-select-option value="online">Online</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                  <ion-label>Payment Status :<ion-toggle color ="primary"> Paid</ion-toggle> </ion-label>
+                
+                  <ion-button shape="round" expand="block" (click)="delete()" >Done</ion-button>
+
+            </ion-card-content>
+        </ion-card>
+
+</ion-content>

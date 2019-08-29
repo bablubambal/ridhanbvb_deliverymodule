@@ -1,0 +1,26 @@
+<ion-header>
+    
+  <ion-toolbar>
+    <ion-title>Order Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  
+    <ion-card >
+        Oreder No: {{recieved.Orderno}}
+      
+        <br> First Name: {{recieved.Firstname}}
+  
+        <br> Last Nmae: {{recieved.Lastname}}
+        <br> Phone Model: {{recieved.phonemodel}}
+        <br> Contact no: {{recieved.phoneno}}
+        <br> Alt Mobile no: {{recieved.altphone}}
+        <br> Amount: {{recieved.amount}}
+        <br>Address: {{recieved.Address}}
+      
+   </ion-card>
+    <ion-button color="success"expand ="full" shape="round" round (click)="summary()">Arrived</ion-button>
+    
+    </ion-content>
+
